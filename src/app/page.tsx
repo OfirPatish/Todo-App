@@ -10,8 +10,8 @@ export default function Home() {
   const { todos, addTodo, deleteTodo, toggleTodo } = useTodos();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-base-200 via-base-300 to-base-200 py-8 px-4">
-      <div className="max-w-3xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-base-200 via-base-300 to-base-200 px-4 flex items-center justify-center">
+      <div className="max-w-3xl w-full py-8">
         {/* Header */}
         <div className="text-center mb-6 sm:mb-8">
           <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-primary rounded-2xl shadow-lg mb-3 sm:mb-4">

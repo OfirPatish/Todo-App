@@ -1,6 +1,6 @@
 # Todo App
 
-A modern, responsive todo application built with Next.js, TypeScript, and DaisyUI. Features a beautiful Dracula-themed dark mode interface with smooth animations and local storage persistence.
+A modern, responsive todo application built with Next.js, TypeScript, and DaisyUI. Features a beautiful dark mode interface with smooth animations and local storage persistence.
 
 ## 🚀 Live Demo
 
@@ -10,7 +10,7 @@ A modern, responsive todo application built with Next.js, TypeScript, and DaisyU
 
 - ✅ Add, complete, and delete todos
 - 📱 Fully responsive design (mobile-first)
-- 🎨 Beautiful Dracula theme with DaisyUI
+- 🎨 Beautiful dark mode theme with DaisyUI
 - 💾 Local storage persistence
 - ⚡ Smooth animations and transitions
 - 🔍 Real-time statistics and progress tracking
