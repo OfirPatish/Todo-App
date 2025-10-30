@@ -1,29 +1,32 @@
-# Todo App
+## Todo App
 
-A modern, responsive todo application built with Next.js, TypeScript, and DaisyUI. Features a beautiful dark mode interface with smooth animations and local storage persistence.
+A modern, responsive todo application providing a clean, theme-aware UI with smooth motion and local storage persistence. Built with Next.js, TypeScript, Tailwind CSS, and DaisyUI.
 
-## 🚀 Live Demo
+## 🌐 Live Site
 
-[**View Live Demo**](https://opdev-todo.vercel.app)
+Visit the app → https://opdev-todo.vercel.app/
 
-## ✨ Features
+## 👇 About
 
-- ✅ Add, complete, and delete todos
-- 📱 Fully responsive design (mobile-first)
-- 🎨 Beautiful dark mode theme with DaisyUI
-- 💾 Local storage persistence
-- ⚡ Smooth animations and transitions
-- 🔍 Real-time statistics and progress tracking
-- ⏰ Relative timestamps ("2 hours ago")
+Quickly add, complete, and manage tasks with real-time stats and subtle animations. The app is optimized for speed, accessibility, and a consistent experience across devices.
+
+## ✨ Key Features
+
+- **Add/complete/delete todos**: Simple, intuitive task management
+- **Real-time stats**: Progress and completion insights
+- **Relative timestamps**: e.g., "2 hours ago"
+- **Theme-aware UI**: Beautiful dark mode with DaisyUI
+- **Responsive**: Mobile-first layout that scales smoothly
+- **Smooth animations**: Subtle motion for state changes
+- **Local persistence**: Automatically saved to localStorage
 
 ## 🛠️ Tech Stack
 
-- **Framework:** Next.js 16 (App Router)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS + DaisyUI
-- **Icons:** React Icons (Heroicons)
-- **State Management:** use-local-storage-state
-- **Deployment:** Vercel
+- **Frontend**: Next.js 16 (App Router), React 19, TypeScript
+- **Styling**: Tailwind CSS 4, DaisyUI 5
+- **Icons**: React Icons
+- **State**: use-local-storage-state
+- **Deployment**: Vercel
 
 ## 🚀 Getting Started
 
@@ -32,37 +35,40 @@ A modern, responsive todo application built with Next.js, TypeScript, and DaisyU
 - Node.js 18+
 - npm or yarn
 
-### Installation
+### Install & Run
 
 ```bash
-# Clone the repository
+# Clone and install
 git clone https://github.com/OfirPatish/Todo-App.git
-
-# Navigate to project directory
 cd Todo-App
-
-# Install dependencies
 npm install
 
-# Run development server
+# Start development server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the app.
+Open http://localhost:3000
 
-### Build for Production
+### Build & Start (production)
 
 ```bash
 npm run build
-npm start
+npm run start
 ```
+
+## 📦 Scripts
+
+- `npm run dev`: Start the development server
+- `npm run build`: Create a production build
+- `npm run start`: Run the production server
+- `npm run lint`: Lint the codebase
 
 ## 📁 Project Structure
 
 ```
 src/
 ├── app/              # Next.js app router pages
-├── components/       # React components
+├── components/       # UI components
 │   ├── TodoInput.tsx
 │   ├── TodoItem.tsx
 │   ├── TodoList.tsx
@@ -75,22 +81,24 @@ src/
     └── dateFormat.ts
 ```
 
-## 🎯 Key Features Explained
+## ☁️ Deployment
 
-- **Local Storage:** Todos persist automatically in browser localStorage
-- **Responsive Design:** Optimized for all screen sizes
-- **Type Safety:** Full TypeScript coverage
-- **Performance:** Optimized with Next.js static generation
+Deploy with Vercel from your repository, or via CLI:
 
-## 📝 License
+```bash
+npm i -g vercel
+vercel
+```
 
-This project is open source and available under the [MIT License](LICENSE).
+## 📄 License
+
+MIT — see `LICENSE` for details.
 
 ## 👤 Author
 
 **Ofir Patish**
 
-- GitHub: [@OfirPatish](https://github.com/OfirPatish)
+- GitHub: https://github.com/OfirPatish
 
 ---
 
