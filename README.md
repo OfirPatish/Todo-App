@@ -4,7 +4,7 @@ A modern, responsive todo application providing a clean, theme-aware UI with smo
 
 ## 🌐 Live Site
 
-Visit the app → https://opdev-todo.vercel.app/
+Visit the app → https://opdev-todo.vercel.app
 
 ## 👇 About
 
