@@ -1,34 +1,34 @@
 # Todo App
 
-A modern, responsive todo application providing a clean, theme-aware UI with smooth motion and local storage persistence. Built with Next.js, TypeScript, Tailwind CSS, and DaisyUI.
+A modern, professional todo application built with Next.js 16, React 19, and DaisyUI. Features a clean, theme-aware UI with local storage persistence and comprehensive type safety.
 
 **🌐 Live Site:** [https://opdev-todo.vercel.app](https://opdev-todo.vercel.app)
 
 ## 🚀 Tech Stack
 
-**Frontend:** Next.js 16, React 19, TypeScript  
-**Styling:** Tailwind CSS 4, DaisyUI 5  
-**Icons:** React Icons  
-**State Management:** use-local-storage-state  
-**Deployment:** Vercel
+- **Frontend:** Next.js 16, React 19, TypeScript
+- **State Management:** Zustand
+- **Styling:** Tailwind CSS 4, DaisyUI 5
+- **Validation:** Zod
 
-## ✨ Key Features
+## ✨ Features
 
-- **Task Management:** Add, complete, and delete todos with intuitive interface
-- **Real-time Stats:** Progress and completion insights
-- **Relative Timestamps:** e.g., "2 hours ago"
-- **Theme-aware UI:** Beautiful dark mode with DaisyUI
-- **Responsive Design:** Mobile-first layout that scales smoothly
-- **Smooth Animations:** Subtle motion for state changes
-- **Local Persistence:** Automatically saved to localStorage
+- ✅ Add, edit, delete, and complete todos
+- 🎯 Priority levels (High, Medium, Low) with visual indicators
+- 🔍 Real-time search with instant filtering
+- 🗂️ Filter todos (All, Active, Completed) with count badges
+- 📊 Progress tracking and statistics (completion percentage, total, completed, remaining)
+- 🔄 Sort options (Newest, Oldest, Alphabetical, Priority)
+- 🎨 Light/Dark theme support with system preference detection
+- ⌨️ Keyboard shortcuts (Ctrl/Cmd + / for search, Ctrl/Cmd + . for add todo)
+- 💾 Local storage persistence for data retention
+- 📤 Export/Import todos (JSON format)
+- 🧹 Clear completed todos (bulk action)
+- ✏️ Input validation (prevents leading spaces, max length enforcement)
+- 🚨 Error handling with user-friendly error messages
+- 📱 Fully responsive design (mobile-first, optimized for all screen sizes)
 
 ## 🏃 Quick Start
-
-### Prerequisites
-
-- Node.js 18+
-
-### Setup
 
 ```bash
 npm install
@@ -40,25 +40,29 @@ Open [http://localhost:3000](http://localhost:3000)
 ## 📁 Project Structure
 
 ```
-todo-app/
-├── src/
-│   ├── app/              # Next.js app router pages
-│   ├── components/       # UI components
-│   │   ├── TodoInput.tsx
-│   │   ├── TodoItem.tsx
-│   │   ├── TodoList.tsx
-│   │   └── TodoStats.tsx
-│   ├── hooks/            # Custom React hooks
-│   │   └── useTodos.ts
-│   ├── types/            # TypeScript type definitions
-│   │   └── todo.ts
-│   └── utils/            # Utility functions
-│       └── dateFormat.ts
-└── public/               # Static assets
+src/
+├── app/              # Next.js app router
+├── components/       # React components
+│   ├── todo/         # Todo-specific components
+│   │   ├── features/ # Core features (Input, Item, List, Stats, Search)
+│   │   ├── filters/  # Filter and sort components
+│   │   ├── actions/  # Export/Import actions
+│   │   ├── feedback/ # Error display and loading states
+│   │   └── layout/   # Layout components
+│   └── ui/           # Shared UI components
+├── store/            # Zustand store (state management)
+├── hooks/            # Custom React hooks
+├── lib/              # Utilities (validation, storage, schemas, constants)
+└── types/            # TypeScript type definitions
 ```
 
-## 🔒 Data Persistence
+## 🛠️ Development
 
-- Local storage for automatic data persistence
-- No backend required - fully client-side application
-- Data persists across browser sessions
+- `npm run dev` - Development server
+- `npm run build` - Production build
+- `npm run start` - Production server
+- `npm run lint` - Run ESLint
+
+## 📝 License
+
+See [LICENSE](LICENSE) file for details.

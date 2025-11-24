@@ -1,6 +1,22 @@
+/**
+ * Formats a timestamp into a human-readable relative time string
+ *
+ * @param timestamp - Unix timestamp in milliseconds
+ * @returns Human-readable relative time string (e.g., "2 minutes ago", "just now")
+ *
+ * @example
+ * ```ts
+ * const time = getRelativeTime(Date.now() - 60000); // "1 minute ago"
+ * ```
+ */
 export function getRelativeTime(timestamp: number): string {
   const now = Date.now();
   const diff = now - timestamp;
+
+  // Handle future timestamps
+  if (diff < 0) {
+    return "just now";
+  }
 
   const seconds = Math.floor(diff / 1000);
   const minutes = Math.floor(seconds / 60);
